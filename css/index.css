@@ -1,0 +1,197 @@
+body{
+background-color: rgb(255, 242, 174);
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  p {
+    max-width: 650px;
+    margin: 40px auto;
+  }
+  
+
+.liminal a {
+    display: inline-block; /* REQUIRED for transform */
+    transition: transform 1.6s ease;
+  }
+  
+  .liminal:hover a {
+    transform: rotateX(180deg);
+  }  
+
+  .liminal a {
+    display: inline-block;
+    transition: transform 1.6s ease;
+    transition-delay: 0.2s;
+  }
+  
+  .liminal:hover a {
+    transform: rotateX(180deg);
+    opacity: 0.7;
+  }
+
+  .liminal {
+    perspective: 600px;
+  }  
+
+.heading{
+    font-family: "helvetica";
+    color: black;
+    background-color: rgb(228, 213, 135) ;
+}
+
+.find-me {
+    transition: transform 1.6s ease;
+  }
+  
+  /* .find-me:hover {
+    transition-delay: 0.3s;
+    transform: translateY(-40px);
+  } */
+
+  /* .find-me {
+    position: relative;
+    transition: top 1.2s ease, left 1.2s ease;
+  }
+  
+  .find-me:hover {
+    top: -30px;
+    left: 40px;
+  } */
+
+  .find-me {
+    transition: opacity 1.2s ease;
+  }
+  
+  .find-me:hover {
+    opacity: 0;
+  }  
+
+  /* .find-me:hover {
+  opacity: 0.15;
+} */
+
+  
+
+.border{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+}
+
+.click{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:10px;
+}
+
+nav {
+    display: flex;
+    gap: 12px;           /* space between boxes */
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;   /* centers the whole row */
+    gap: 16px;                 /* space between buttons */
+    width: 100vw;              /* span the full viewport */
+    box-sizing: border-box;
+  }
+  
+  
+  .button {
+    background: rgb(228, 213, 135);
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    background: rgb(228, 213, 135);
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    transition:
+      background-color 1.2s ease,
+      transform 1.4s ease,
+      letter-spacing 1.2s ease;
+  }
+  
+  .button:hover {
+    background-color: rgb(210, 195, 120);
+    transform: translateY(-2px);
+    letter-spacing: 1px;
+  }
+  
+  .button:hover {
+    background-color: rgb(210, 195, 120);
+    transform: translateY(-2px);
+    letter-spacing: 1px;
+  }
+
+  .button a {
+    text-decoration: none;
+    color: black;
+    transition: opacity 1.2s ease;
+  }
+  
+  .button:hover a {
+    opacity: 0.7;
+  }
+
+  @keyframes drift {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-1px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .button:hover {
+    animation: drift 3s ease-in-out infinite;
+  }
+  
+  .image-wrap {
+    position: relative;
+    height: 50vh;
+  }
+  
+  .bottom-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bottom-image {
+    mask-image: linear-gradient(to top, transparent 0%, black 25%);
+  }
+
+  .bottom-image {
+    filter: brightness(0.9) contrast(0.95);
+  }
+  

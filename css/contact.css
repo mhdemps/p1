@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(255, 242, 174);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    
+    .heading{
+        font-family: "helvetica";
+        color: black;
+        background-color: rgb(228, 213, 135);
+   
+        max-width: 100%;     /* controls the box width */
+        margin: 0 auto;       /* centers the box */
+        padding: 12px 20px;   /* breathing room around text */
+        text-align: center;
+}
+
+    .home-nav {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0;
+      }
+      
+      .contact-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;           /* space between buttons */
+        margin-top: 40px;   /* space under “You found me” */
+      }
+      
+
+      .button {
+        background: rgb(228, 213, 135);
+        padding: 10px 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        transition:
+          background-color 1.2s ease,
+          transform 1.4s ease,
+          letter-spacing 1.2s ease;
+      }
+      
+      .button:hover {
+        background-color: rgb(210, 195, 120);
+        transform: translateY(-2px);
+        letter-spacing: 1px;
+      }
+      
+      .button:hover {
+        background-color: rgb(210, 195, 120);
+        transform: translateY(-2px);
+        letter-spacing: 1px;
+      }
+    
+      .button a {
+        text-decoration: none;
+        color: black;
+        transition: opacity 1.2s ease;
+      }
+      
+      .button:hover a {
+        opacity: 0.7;
+      }
+    
+      @keyframes drift {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-1px); }
+        100% { transform: translateY(0); }
+      }
+      
+      .button:hover {
+        animation: drift 3s ease-in-out infinite;
+      }
