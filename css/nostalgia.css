@@ -96,6 +96,13 @@ body{
         animation: drift 3s ease-in-out infinite;
       }
       
+      .nav-arrows {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        margin: 80px 0 40px;
+      }
     
       
     
