@@ -1,17 +1,14 @@
 body{
     background-color: rgb(255, 242, 174);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 50vh;
+    padding-top: 4.5em;  /* space for fixed heading */
     }
 
     .image-wrap {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      position: relative;
       width: 100%;
       height: 50vh;
-      z-index: 1;
+      margin-top: -4.5em;  /* pull image up under the heading so it sits at top on load */
     }
 
     .bottom-image {
@@ -45,11 +42,16 @@ body{
       }
 
     .heading{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        box-sizing: border-box;
         font-family: "helvetica";
         color: black;
         background-color: rgb(228, 213, 135);
         width: 100%;
-        box-sizing: border-box;
         margin: 0 auto;       /* centers the box */
         padding: 12px 20px;   /* breathing room around text */
         text-align: center;
