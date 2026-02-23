@@ -3,16 +3,28 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     }
     
-    p {
+    .poem-lines p {
         text-align: center;
         padding-left: 15%;
         padding-right: 15%;
-      }
-      
-
-      p {
         max-width: 650px;
         margin: 40px auto;
+        display: block;
+        transition: transform 0.6s ease-out, opacity 0.5s ease, filter 0.5s ease;
+      }
+
+      /* Odd lines drift left on hover */
+      .poem-lines p:nth-child(odd):hover {
+        transform: translateX(-12%);
+        opacity: 0.85;
+        filter: drop-shadow(-4px 2px 3px rgba(0, 0, 0, 0.15));
+      }
+
+      /* Even lines drift right on hover */
+      .poem-lines p:nth-child(even):hover {
+        transform: translateX(12%);
+        opacity: 0.85;
+        filter: drop-shadow(4px 2px 3px rgba(0, 0, 0, 0.15));
       }
 
     .heading{
