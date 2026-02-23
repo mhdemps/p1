@@ -1,8 +1,37 @@
 body{
     background-color: rgb(255, 242, 174);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50vh;
     }
-    
+
+    .image-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 50vh;
+      z-index: 1;
+    }
+
+    .bottom-image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bottom-image {
+      mask-image: linear-gradient(to top, transparent 0%, black 25%);
+    }
+
+    .bottom-image {
+      filter: brightness(0.9) contrast(0.95);
+    }
+
     p {
         text-align: center;
         padding-left: 15%;
