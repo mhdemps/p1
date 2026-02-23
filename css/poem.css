@@ -10,18 +10,20 @@ body{
         max-width: 650px;
         margin: 40px auto;
         display: block;
-        transition: transform 0.6s ease-out, opacity 0.5s ease, filter 0.5s ease;
+        transition: transform 2s ease-out, opacity 1.5s ease, filter 1.5s ease;
       }
 
-      /* Odd lines drift left on hover */
-      .poem-lines p:nth-child(odd):hover {
+      /* Odd lines drift left (stays until page reload) */
+      .poem-lines p:nth-child(odd):hover,
+      .poem-lines p.drifted-left {
         transform: translateX(-12%);
         opacity: 0.85;
         filter: drop-shadow(-4px 2px 3px rgba(0, 0, 0, 0.15));
       }
 
-      /* Even lines drift right on hover */
-      .poem-lines p:nth-child(even):hover {
+      /* Even lines drift right (stays until page reload) */
+      .poem-lines p:nth-child(even):hover,
+      .poem-lines p.drifted-right {
         transform: translateX(12%);
         opacity: 0.85;
         filter: drop-shadow(4px 2px 3px rgba(0, 0, 0, 0.15));

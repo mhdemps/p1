@@ -46,5 +46,12 @@
         </div>
       </div>
 
+    <script>
+      document.querySelectorAll('.poem-lines p').forEach(function (line, i) {
+        line.addEventListener('mouseenter', function () {
+          this.classList.add(i % 2 === 0 ? 'drifted-left' : 'drifted-right');
+        });
+      });
+    </script>
     </body>
 </html>
