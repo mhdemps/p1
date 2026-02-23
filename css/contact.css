@@ -77,3 +77,7 @@ body{
       .button:hover {
         animation: drift 3s ease-in-out infinite;
       }
+
+      .heading h1 {
+        font-size: clamp(18px, 4vw, 36px);
+      }
