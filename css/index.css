@@ -43,7 +43,9 @@ p {
 .heading{
     font-family: "helvetica";
     color: black;
-    background-color: rgb(228, 213, 135) ;
+    background-color: rgb(228, 213, 135);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .find-me {

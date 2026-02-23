@@ -7,8 +7,8 @@ body{
         font-family: "helvetica";
         color: black;
         background-color: rgb(228, 213, 135);
-   
-        max-width: 100%;     /* controls the box width */
+        width: 100%;
+        box-sizing: border-box;
         margin: 0 auto;       /* centers the box */
         padding: 12px 20px;   /* breathing room around text */
         text-align: center;
