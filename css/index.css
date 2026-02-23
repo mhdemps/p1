@@ -42,11 +42,16 @@ p {
   }  
 
 .heading{
+    position: sticky;
+    top: 0;
+    z-index: 10;
     font-family: "helvetica";
     color: black;
     background-color: rgb(228, 213, 135);
     width: 100%;
     box-sizing: border-box;
+    padding: 12px 20px;
+    text-align: center;
 }
 
 .find-me {
