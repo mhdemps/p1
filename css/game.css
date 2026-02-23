@@ -34,111 +34,105 @@ body{
 
     
     p {
-        text-align: center;
-        padding-left: 15%;
-        padding-right: 15%;
-      }
-      
+      text-align: center;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    
 
-      p {
-        max-width: 650px;
-        margin: 40px auto;
-      }
+    p {
+      max-width: 650px;
+      margin: 40px auto;
+    }
 
-    .heading{
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        font-family: "helvetica";
-        color: black;
-        background-color: rgb(228, 213, 135);
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 12px 20px;   /* breathing room around text */
-        text-align: center;
+  .heading{
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-sizing: border-box;
+      font-family: "helvetica";
+      color: black;
+      background-color: rgb(228, 213, 135);
+      width: 100%;
+      margin: 0;
+      padding: 12px 20px;   /* breathing room around text */
+      text-align: center;
 }
 
+  nav {
+      display: flex;
+      gap: 12px;           /* space between boxes */
+      align-items: center;
+    }
+  
     nav {
-        display: flex;
-        gap: 12px;           /* space between boxes */
-        align-items: center;
-      }
-    
-      nav {
-        display: flex;
-        justify-content: center;   /* centers the whole row */
-        gap: 16px;                 /* space between buttons */
-        width: 100vw;              /* span the full viewport */
-        box-sizing: border-box;
-      }
+      display: flex;
+      justify-content: center;   /* centers the whole row */
+      gap: 16px;                 /* space between buttons */
+      width: 100vw;              /* span the full viewport */
+      box-sizing: border-box;
+    }
 
-      .home-nav {
-        display: flex;
-        justify-content: center;
-        margin: 60px 0;
-      }
-      
-      .home-nav .button {
-        /* extra styles */
-
-      }
-
-      .button {
-        background: rgb(228, 213, 135);
-        padding: 10px 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      
-        transition:
-          background-color 1.2s ease,
-          transform 1.4s ease,
-          letter-spacing 1.2s ease;
-      }
-      
-      .button:hover {
-        background-color: rgb(210, 195, 120);
-        transform: translateY(-2px);
-        letter-spacing: 1px;
-      }
-      
-      .button:hover {
-        background-color: rgb(210, 195, 120);
-        transform: translateY(-2px);
-        letter-spacing: 1px;
-      }
+    .home-nav {
+      display: flex;
+      justify-content: center;
+      margin: 60px 0;
+    }
     
-      .button a {
-        text-decoration: none;
-        color: black;
-        transition: opacity 1.2s ease;
-      }
-      
-      .button:hover a {
-        opacity: 0.7;
-      }
-    
-      @keyframes drift {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(-1px); }
-        100% { transform: translateY(0); }
-      }
-      
-      .button:hover {
-        animation: drift 3s ease-in-out infinite;
-      }
+    .home-nav .button {
+      /* extra styles */
 
-      .nav-arrows {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 24px;
-        margin: 80px 0 40px;
-      }
+    }
 
-      
-      
+    .button {
+      background: rgb(228, 213, 135);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     
-      
+      transition:
+        background-color 1.2s ease,
+        transform 1.4s ease,
+        letter-spacing 1.2s ease;
+    }
     
+    .button:hover {
+      background-color: rgb(210, 195, 120);
+      transform: translateY(-2px);
+      letter-spacing: 1px;
+    }
+    
+    .button:hover {
+      background-color: rgb(210, 195, 120);
+      transform: translateY(-2px);
+      letter-spacing: 1px;
+    }
+  
+    .button a {
+      text-decoration: none;
+      color: black;
+      transition: opacity 1.2s ease;
+    }
+    
+    .button:hover a {
+      opacity: 0.7;
+    }
+  
+    @keyframes drift {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-1px); }
+      100% { transform: translateY(0); }
+    }
+    
+    .button:hover {
+      animation: drift 3s ease-in-out infinite;
+    }
+    
+    .nav-arrows {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      margin: 80px 0 40px;
+    }
