@@ -1,44 +1,19 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Films</title>
 
   <link rel="stylesheet" href="../css/films.css">
 
-  <style>
-    .poster-row {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 60px;
-      flex-wrap: wrap;
-    }
-  
-    .poster-wrap {
-      transition: transform 0.4s ease;
-    }
-  
-    .poster-img {
-      width: 240px;              /* bigger */
-      height: auto;              /* keeps full image */
-      display: block;
-      transition: transform 0.4s ease;
-    }
-  
-    .poster-wrap:hover .poster-img {
-      transform: scale(1.15);    /* expands without cropping */
-    }
-  </style>
-  
 </head>
 
 <body>
 
   <div class="image-wrap">
-    <img src="../assets/help.jpg" class="bottom-image">
+    <img src="../assets/help.jpg" class="bottom-image" alt="">
   </div>
 
   <audio autoplay loop>
@@ -49,41 +24,49 @@
     <h1>Media That Explores the Liminal</h1>
   </div>
 
-  <p>movies</p>
+  <p class="section-label">movies</p>
 
   <div class="poster-row">
 
-    <div class="poster-wrap">
-      <img src="../assets/the-substance.jpg" alt="The Substance" class="poster-img">
+    <div class="poster">
+      <img src="../assets/sub.png" alt="The Substance">
     </div>
 
-    <div class="poster-wrap">
-      <img src="../assets/Vivarium.jpg" alt="Vivarium" class="poster-img">
+    <div class="poster">
+      <img src="../assets/viv.png" alt="Vivarium">
     </div>
 
-    <div class="poster-wrap">
-      <img src="../assets/pulirbus.jpg" alt="Plur1bus" class="poster-img">
+    <div class="poster">
+      <img src="../assets/plu.png" alt="Pluribus">
     </div>
 
-    <div class="poster-wrap">
-      <img src="../assets/Barton-Fink.jpg" alt="Barton Fink" class="poster-img">
+    <div class="poster">
+      <img src="../assets/bf.png" alt="Barton Fink">
+    </div>
+
+    <div class="poster">
+      <img src="../assets/ttz.png" alt="Poster Five">
+    </div>
+
+    <div class="poster">
+      <img src="../assets/tts.png" alt="Poster Six">
     </div>
 
   </div>
-          
+
   <div class="nav-arrows">
     <div class="button arrow">
       <a href="poem.html">←</a>
     </div>
-  
+
     <div class="button">
       <a href="index.html">home</a>
     </div>
-  
+
     <div class="button arrow">
       <a href="movie.html">→</a>
     </div>
   </div>
-          
+
 </body>
 </html>
