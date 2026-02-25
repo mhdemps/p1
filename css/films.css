@@ -183,15 +183,6 @@ body{
   .poster:hover {
     z-index: 10;
   }
-  
-  /* Optional small polish */
-  
-  .section-label {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 18px;
-    letter-spacing: 2px;
-  }
 
   .page-description {
     text-align: center;
