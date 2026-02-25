@@ -135,31 +135,90 @@ body{
       }
 
       .poster-row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        flex-wrap: wrap;
+        margin: 40px auto 60px;
+        padding: 0 20px;
+        max-width: 1200px;
+      }
+
+      .poster-wrap {
+        flex: 0 0 200px;
+        width: 200px;
+        height: 300px;
+        overflow: hidden;
+        background: rgb(228, 213, 135);
+        transition:
+          transform 1.4s ease,
+          box-shadow 1.2s ease;
+      }
+
+      .poster-wrap:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      .poster-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: filter 1.2s ease;
+      }
+
+      .poster-wrap:hover .poster-img {
+        filter: brightness(0.95) contrast(1.05);
+      }
+
+      .nav-arrows {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        margin: 80px 0 40px;
+      }
+
+      @media (max-width: 768px) {
+        p {
+          text-align: left;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    
+      .heading h1 {
+        font-size: clamp(18px, 4vw, 36px);
+      }
+.poster-row {
   display: flex;
   justify-content: center;
-  align-items: flex-start;   /* aligns tops cleanly */
-  gap: 50px;
+  gap: 40px;
   margin-top: 60px;
-  flex-wrap: wrap;           /* allows wrapping */
+  flex-wrap: wrap;
 }
 
 .poster-wrap {
+  position: relative;
   transition: transform 0.4s ease;
 }
 
 .poster-img {
-  max-width: 260px;   /* controls size but doesn't crop */
-  width: 100%;
-  height: auto;       /* ALWAYS keeps full image */
+  width: 240px;      /* Bigger size */
+  height: auto;      /* Keeps full image ratio */
   display: block;
   transition: transform 0.4s ease;
 }
 
-/* expand outward naturally */
+/* Expands without cropping */
 .poster-wrap:hover .poster-img {
-  transform: scale(1.12);
+  transform: scale(1.15);
 }
 
+/* Keeps hovered one on top */
 .poster-wrap:hover {
   z-index: 10;
 }
+    
