@@ -47,9 +47,6 @@ p {
 
     width: 100vw;          /* force full viewport width */
     left: 0;               /* ensures no offset */
-    
-    background-color: rgb(228, 213, 135);
-    padding: 16px 0;
 
     text-align: center;
     font-family: "helvetica";
