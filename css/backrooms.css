@@ -3,7 +3,7 @@ body {
     height: 100vh;
     width: 100vw;
   
-    background-image: url("assets/backrooms.jpg"); /* change path if needed */
+    background-image: url("assets/thebackroom.jpg"); /* change path if needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
