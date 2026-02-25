@@ -1,44 +1,97 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Films</title>
 
-        <link rel="stylesheet" href="../css/films.css">
-        
-    </head>
-    <body>
+  <link rel="stylesheet" href="../css/films.css">
 
-      <div class="image-wrap">
-        <img src="../assets/help.jpg" class="bottom-image">
-      </div>
+  <style>
+    .poster-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
 
-      <audio autoplay loop>
-        <source src="../assets/Index.mp3" type="audio/mpeg">
-      </audio>
+    .poster-wrap {
+      width: 180px;
+      height: 270px;
+      overflow: hidden;
+      transition: transform 0.4s ease;
+    }
 
-    <div class="heading">
-      <h1>Media That Explores the Liminal</h1>
+    .poster-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .poster-wrap:hover .poster-img {
+      transform: scale(1.08);
+      filter: brightness(1.1);
+    }
+
+    .poster-wrap:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="image-wrap">
+    <img src="../assets/help.jpg" class="bottom-image">
+  </div>
+
+  <audio autoplay loop>
+    <source src="../assets/Index.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="heading">
+    <h1>Media That Explores the Liminal</h1>
+  </div>
+
+  <p>movies</p>
+
+  <div class="poster-row">
+
+    <div class="poster-wrap">
+      <img src="../assets/the-substance.jpg" alt="The Substance" class="poster-img">
     </div>
 
-    <p>movies</p>
+    <div class="poster-wrap">
+      <img src="../assets/vivarium.jpg" alt="Vivarium" class="poster-img">
+    </div>
+
+    <div class="poster-wrap">
+      <img src="../assets/plur1bus.jpg" alt="Plur1bus" class="poster-img">
+    </div>
+
+    <div class="poster-wrap">
+      <img src="../assets/barton-fink.jpg" alt="Barton Fink" class="poster-img">
+    </div>
+
+  </div>
           
-          <div class="nav-arrows">
-            <div class="button arrow">
-              <a href="poem.html">←</a>
-            </div>
+  <div class="nav-arrows">
+    <div class="button arrow">
+      <a href="poem.html">←</a>
+    </div>
+  
+    <div class="button">
+      <a href="index.html">home</a>
+    </div>
+  
+    <div class="button arrow">
+      <a href="movie.html">→</a>
+    </div>
+  </div>
           
-            <div class="button">
-              <a href="index.html">home</a>
-            </div>
-          
-            <div class="button arrow">
-              <a href="movie.html">→</a>
-            </div>
-          </div>
-          
-          
-    </body>
+</body>
 </html>
