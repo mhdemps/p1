@@ -40,32 +40,25 @@ p {
     perspective: 600px;
   }  
 
-  .title-link {
-    display: block;           /* makes whole bar clickable */
-    text-decoration: none;
-    color: black;
-    font-size: clamp(18px, 4vw, 36px);
-    letter-spacing: 1px;
-  }
-  
   .heading {
     position: sticky;
     top: 0;
     z-index: 1000;
-  
-    width: 100%;
-    background-color: rgb(228, 213, 135);
-  
+
+    width: 100vw;          /* force full viewport width */
+    left: 0;               /* ensures no offset */
+
     padding: 16px 0;
+
     text-align: center;
-  
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .heading:hover {
-    letter-spacing: 2px;
-    transition: letter-spacing 1.2s ease;
-  }
+    font-family: "helvetica";
+    color: black;
+
+}
+
+.heading h1 {
+    margin: 0;
+}
 
 .find-me {
     transition: transform 1.6s ease;
