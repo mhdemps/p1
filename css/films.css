@@ -135,31 +135,31 @@ body{
       }
 
       .poster-row {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;   /* aligns tops cleanly */
-        gap: 50px;
-        margin-top: 60px;
-        flex-wrap: wrap;           /* allows wrapping */
-      }
-      
-      .poster-wrap {
-        transition: transform 0.4s ease;
-      }
-      
-      .poster-img {
-        max-width: 260px;   /* controls size but doesn't crop */
-        width: 100%;
-        height: auto;       /* ALWAYS keeps full image */
-        display: block;
-        transition: transform 0.4s ease;
-      }
-      
-      /* expand outward naturally */
-      .poster-wrap:hover .poster-img {
-        transform: scale(1.12);
-      }
-      
-      .poster-wrap:hover {
-        z-index: 10;
-      }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;   /* aligns tops cleanly */
+  gap: 50px;
+  margin-top: 60px;
+  flex-wrap: wrap;           /* allows wrapping */
+}
+
+.poster-wrap {
+  transition: transform 0.4s ease;
+}
+
+.poster-img {
+  max-width: 260px;   /* controls size but doesn't crop */
+  width: 100%;
+  height: auto;       /* ALWAYS keeps full image */
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* expand outward naturally */
+.poster-wrap:hover .poster-img {
+  transform: scale(1.12);
+}
+
+.poster-wrap:hover {
+  z-index: 10;
+}
