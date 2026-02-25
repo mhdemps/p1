@@ -45,19 +45,21 @@ p {
     top: 0;
     z-index: 1000;
 
-    width: 100%;
-    box-sizing: border-box;
-
-    background-color: rgb(228, 213, 135); /* same yellow as buttons */
+    width: 100vw;          /* force full viewport width */
+    left: 0;               /* ensures no offset */
     
-    margin: 0;                /* remove bottom margin */
-    padding: 16px 20px;       /* give it breathing room */
+    background-color: rgb(228, 213, 135);
+    padding: 16px 0;
 
     text-align: center;
     font-family: "helvetica";
     color: black;
 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional but nice */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.heading h1 {
+    margin: 0;
 }
 
 .find-me {
